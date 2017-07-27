@@ -173,7 +173,7 @@ a:focus {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.pexels.com/photos/475513/pexels-photo-475513.jpeg);
   background-size: cover;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 #signup-btn {
