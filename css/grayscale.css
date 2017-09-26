@@ -170,7 +170,7 @@ a:focus {
 }
 
 #about {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.pexels.com/photos/475513/pexels-photo-475513.jpeg);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.pcwallart.com%2Fimages%2Fdark-wallpaper-2.jpg&f=1);
   background-size: cover;
   width: 100%;
   padding-top: 50px;
@@ -195,8 +195,6 @@ a:focus {
 
 #projects {
   background-image: url(https://static.pexels.com/photos/159657/paint-notebook-brush-pencil-159657.jpeg);
-  background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
