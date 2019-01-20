@@ -63,7 +63,7 @@ if (typeof console === "undefined") {
 /*====flex main slider====*/
 /*==========================*/
 $('.slider-main,.testimonials').flexslider({
-  slideshowSpeed: 3000,
+  slideshowSpeed: 5000,
   directionNav: false,
   animation: "fade"
 });
