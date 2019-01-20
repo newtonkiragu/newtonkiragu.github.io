@@ -1,11 +1,3 @@
-/*
-* Theme Name: Miron
-* Description: Miron Theme for corporate and creative sites, responsive and clean layout.
-* Author: design_mylife
-* Version: 1.3
-* preview url: http://designmylife.co.in/miron/index.html
-*/
-
 /*************google font******************/
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,700,500,600,300);
 /* --------------------------------------------------------	*/
@@ -445,6 +437,9 @@ div.navbar.black{
     }
     #page-tree{
         padding-top: 70px !important;
+    }
+    div.navbar{
+        background: #000;
     }
    
 }
