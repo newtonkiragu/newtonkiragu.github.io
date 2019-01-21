@@ -34,7 +34,6 @@ $(document).ready(function () {
     event.preventDefault();
     var sectionID = $(this).attr("data-id");
     scrollToID('#' + sectionID, 750);
-    addClass('active');
   });
   // scroll to top action
   $('.scroll-top').on('click', function (event) {
