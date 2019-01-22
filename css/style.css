@@ -275,7 +275,7 @@ div.navbar{
 
 }
 div.navbar.black{
-    background: #000;
+    background: rgba(0, 0, 0, 0.9);
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
