@@ -173,7 +173,6 @@
     <!--container end-->
   </section>
   <!--services end-->
-
   <!--recent work-->
 
   <section id="about-colored" class="padding-60">
@@ -271,7 +270,10 @@
           Built with love in GitHub.
         </div>
         <div class="col-md-12 text-center">
-          <span>&copy; copyright 2019. All right reserved.</span>
+          <span id="copyright">&copy; copyright
+            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+            All right reserved.</span>
+
         </div>
       </div>
     </div>
