@@ -1,16 +1,17 @@
 /*************google font******************/
-@import url(https://fonts.googleapis.com/css?family=Poppins:400,700,500,600,300);
+@import url(https://fonts.googleapis.com/css?family=Caveat|Cedarville+Cursive|Indie+Flower|Patrick+Hand&display=swap);
 /* --------------------------------------------------------	*/
 /*-----------------Base -----------------------------------     */
 /* --------------------------------------------------------	*/
-body{ 
-   font-family: 'Arimo', sans-serif;
+body{
+    font-family: 'Patrick Hand', cursive;
    font-weight: 400;
     background: #fff;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;	
     cursor:default;
-    font-size: 14px;
+    font-size: 20px;
+    touch-action: none;
 }
 
 h1,
@@ -21,7 +22,7 @@ h5,
 h6{
     margin-top:0px;
     margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Caveat', cursive;
 }
 h1{
     font-weight: 600;
@@ -32,13 +33,16 @@ h1{
 h2.subtitle{
     font-weight: 300;
     color:#666;
-    font-size: 19px;
+    font-size: 26px;
     margin-bottom: 0px;
 }
 h2.subtitle i{
     color:#F54325;
-    font-size: 2em;
+    font-size: 10em;
 }
+/*h3{*/
+/*    font-size: 28px;*/
+/*}*/
 a{
     text-decoration: none !important;
 }
@@ -98,54 +102,6 @@ p{
 /*============================================================*/
 
 
-
-/*pagination*/
-.pagination  li  a{
-    position: relative;
-    float: left;
-    padding: 6px 12px;
-    line-height: 1.42857;
-    text-decoration: none;
-    color: #000;
-    background-color: transparent;
-    border: 1px solid #eee;
-    margin-left: -1px;
-    -webkit-transition: all 200ms ease-in;
-    -o-transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
-    transition: all 200ms ease-in;
-}
-.pagination li a:hover{
-    color:#fff;
-    background-color: #F54325;
-    border-color: #F54325;
-}
-
-/*progress bar*/
-.progress {
-    height: 15px;
-    line-height: 10px;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    border-radius: 0px;
-    -webkit-border-radius: 0px;
-    background: #E9E9E9;
-}
-.progress-bar{
-    line-height: 10px;
-    background: #F54325;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
-h3.heading-progress{
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 5px;
-}
-h3.heading-progress span{
-    color:#F54325;
-    font-weight: 400;
-}
 /*tabs*/
 
 .tabs .nav-tabs {
@@ -287,47 +243,11 @@ div.navbar.black{
     color: #fff;
 }
 .navbar-nav>li>a {
-   font-family: 'Poppins', sans-serif;
+    font-family: 'Patrick Hand', cursive;
    font-weight: 700;
    letter-spacing: 1px;
      text-transform: uppercase;
         font-size: 13px;
-}
-/*============================*/
-/*======dropdowm menu=========*/
-/*============================*/
-.navbar .dropdown-menu {
-    padding: 0;
-    margin: 0;
-    min-width: 190px;
-    background-color: #222;
-    border: none;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    border-top: 2px solid #F54325 !important;
-}
-.navbar .dropdown-menu li a{
-    color:#fff;
-    padding: 9px 20px;
-    border-bottom: 1px solid #333;
-    font-weight: 400;
-    font-size: 14px;
-     font-family: 'Poppins', sans-serif;
-    -webkit-transition: all 200ms ease-in;
-    -o-transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
-    transition: all 200ms ease-in;
-}
-.navbar .dropdown-menu li:last-child a{
-    border-bottom: none;
-}
-.navbar .dropdown-menu li a:hover{
-    background: #F54325;
-    color:#fff;
 }
 
 @media (min-width: 768px){
@@ -378,8 +298,9 @@ div.navbar.black{
 #main-slider-bg{
     background-image: url('../images/newton.jpg');
     position: relative;
-    height: 600px;
+    height: 700px;
     background-size: cover;
+    background-attachment: fixed;
     -webkit-background-size: cover;
 }
 .slider-overlay{
@@ -389,6 +310,11 @@ div.navbar.black{
     left: 0;
     bottom: 0;
     right: 0;
+}
+
+.overlay{
+    background: rgba(0,0,0,.5);
+    background-size: cover;
 }
 .slider-main{
     padding-top: 150px;
@@ -419,7 +345,7 @@ div.navbar.black{
     color:#f0f0f0;
     margin-bottom: 30px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 
@@ -528,13 +454,19 @@ div.navbar.black{
 /*============================*/
 /*========= Services =========*/
 /*============================*/
-
+#services-sec{
+    background-color: #fff;
+    background-image:
+            linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+            linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+}
 .services-box{
     padding-top: 25px;
     padding-bottom: 15px;
     padding-left: 12px;
     padding-right: 12px;
-    background: #fff;
+    /*background: #fff;*/
     text-align: center;
 
 }
@@ -577,17 +509,28 @@ div.navbar.black{
     background: #fff;
 }
 #about-colored{
-    background-color: rgb(255, 221, 0);
-    background-attachment: scroll;
-    background-position: 50% -1115px;
+    background-color: #fff;
+    background-image:
+            linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+            linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
 }
+
+/*#about-colored .container{*/
+/*    background: rgb(0, 0, 0, .5);*/
+/*    background-size: inherit;*/
+/*}*/
 #testimonials{
     background-color: #F54325;
 
 }
 #footer-defoult{
-    background: #363839;
-    color:#8C8989;
+    background-color: #fff;
+    background-image:
+            linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+            linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+
 }
 #page-tree{
     padding-top: 120px;
@@ -618,7 +561,11 @@ div.navbar.black{
     font-size: 40px;
 }
 #home-contact{
-    background-color: #f7f7f7;
+    background-color: #fff;
+    background-image:
+            linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+            linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
 }
 /*==================== ========*/
 /*========= Portflio =========*/
@@ -1042,73 +989,6 @@ background: transparent;
 }
 
 
-
-/*==================== ========*/
-/*========= Pricing tabels =========*/
-/*============================*/
-
-.price-box{
-    padding:25px 0px;
-    background-color: #fff;
-    text-align: center;
-    overflow: hidden;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    box-shadow: 0px 1px 2px #999;
-    -webkit-box-shadow: 0px 1px 2px #999;
-}
-.price-box h3{
-    font-size: 35px;
-}
-.price-box h3 small{
-    font-size: 13px;margin-left: 5px;
-}
-.pricing-head{
-    margin: 0px;
-    padding: 20px 0px;
-    background: #555;
-    color:#fff;
-}
-.price-desc{
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-.price-desc p{
-    padding: 10px 0px;
-    display: block;
-    border-bottom: 1px solid #eee;
-    margin: 0px;
-}
-.price-box-popular .pricing-head{
-    background-color: #F54325;
-}
-
-
-/*==================== ========*/
-/*========= team =========*/
-/*============================*/
-.person-desc{
-    padding: 20px 15px;
-    background-color: #fff;
-
-}
-.person-desc h4{
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-.person-desc h4 small{
-    font-size: 12px;
-    margin-left: 12px;
-}
-.person-desc .social{
-    margin-bottom: 0px;
-    margin-top: 15px;
-}
-
-
-
-
-
 /*==================== ========*/
 /*========= Forms =========*/
 /*============================*/
@@ -1189,18 +1069,8 @@ input[type="color"]:focus,
     font-weight: 400;
 }
 
-
-
-/*****************google map*********************/
-
-#map-canvas{
-    width:100%;
-    height: 400px;
+input{
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 18px;
 }
-
-
-
-
-
-
-

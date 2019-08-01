@@ -1,18 +1,3 @@
-
-
-
-/*=========================*/
-/*====main navigation hover dropdown====*/
-/*==========================*/
-$(document).ready(function () {
-
-  $('.js-activated').dropdownHover({
-    instantlyCloseOthers: false,
-    delay: 0
-  }).dropdown();
-
-});
-
 $(document).ready(function () {
   $(window).on("scroll", function () {
     if ($(window).scrollTop()) {
@@ -67,17 +52,6 @@ $('.slider-main,.testimonials').flexslider({
   animation: "fade"
 });
 
-/*=========================*/
-/*========portfolio mix====*/
-/*==========================*/
-$('#grid').mixitup();
-
-/*=========================*/
-/*========tooltip and popovers====*/
-/*==========================*/
-$("[data-toggle=popover]").popover();
-
-$("[data-toggle=tooltip]").tooltip();
 
 /*=========================*/
 /*========flex-gallery slide====*/
@@ -103,6 +77,3 @@ var wow = new WOW(
   }
 );
 wow.init();
-
-
-

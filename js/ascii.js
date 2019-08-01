@@ -25,7 +25,7 @@ console.log(`%c
 .                uuuu ""$$$$$$$$$$uuu                                             .
 .       u$$$uuu$$$$$$$$$uu ""$$$$$$$$$$$uuu$$$                                    .
 .       $$$$$$$$$$""""           ""$$$$$$$$$$$"           newtonkaranu.me         .
-.        "$$$$$"                      ""$$$$""      kudos for finding this place   .
+.        "$$$$$"                      ""$$$$""      kudos for finding this place  .
 .          $$$"                         $$$$"                                     .
 .                                                                                 .
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .`, "color:#9acc14; background:black; font-family: monospace");
