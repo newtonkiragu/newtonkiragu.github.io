@@ -54,7 +54,7 @@
             <a href="#" class="scroll-link" data-id="services-sec">Services</a>
           </li>
           <li>
-            <a href="#" class="scroll-link" data-id="recent-work">Projects</i></a>
+            <a href="#" class="scroll-link" data-id="recent-work">Projects</a>
           </li>
           <li>
             <a href="#" class="scroll-link" data-id="about-colored">About</a>
@@ -337,20 +337,20 @@
           <form class="gform" method="POST"
             action="https://script.google.com/macros/s/AKfycbxNX15OH37oDpNp5FMpGGq4BGK5t2uW0p7SFvBW/exec">
             <div class="form-group">
-              <label>Name</label>
-              <input type="text" class="form-control" name="name" required>
+              <label for="name">Name</label>
+              <input type="text" class="form-control" name="name" id="name" required>
             </div>
             <div class="form-group">
-              <label>Email</label>
-              <input type="email" class="form-control" name="email" required>
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="email" id="email" required>
             </div>
             <div class="form-group">
-              <label>Subject</label>
-              <input type="text" class="form-control" name="subject" required>
+              <label for="subject">Subject</label>
+              <input type="text" class="form-control" name="subject" id="subject" required>
             </div>
             <div class="form-group">
-              <label>Message</label>
-              <textarea class="form-control" rows="8" name="message" required></textarea>
+              <label for="message">Message</label>
+              <textarea class="form-control" rows="8" name="message" id="message" required></textarea>
             </div>
             <div class="form-group">
 
@@ -372,9 +372,9 @@
           </p>
           <ul class="list-unstyled contact-list margin-btm20">
             <li> <strong>Location:</strong> Nairobi, Kenya.</li>
-            <li><strong>Phone:</strong><a href="tel:+254714895623">Call me</a>.</li>
-            <li><strong>Email:</strong><a href="mailto:karanunewton4@gmail.com">Drop me a mail</a>.</li>
-            <li><strong>Website:</strong><a href="http://newtonkaranu.me">You are here</a>.</li>
+            <li><strong>Phone:</strong><a href="tel:+254714895623" class="links">Call me</a>.</li>
+            <li><strong>Email:</strong><a href="mailto:karanunewton4@gmail.com" class="links">Drop me a mail</a>.</li>
+            <li><strong>Website:</strong><a href="http://newtonkaranu.me" class="links">You are here</a>.</li>
           </ul>
         </div>
       </div>
@@ -389,12 +389,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center margin-btm20">
-          <a href="#" class="scroll-top" data-id="page-top" style="color: #F54325;">Back Top.</a>
+          <a href="#" class="scroll-top links" data-id="page-top">Back Top.</a>
           Built with &heartsuit;.
         </div>
         <div class="col-md-12 text-center">
           <span id="copyright">&copy; copyright
-            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+            <script>document.getElementById('copyright').appendChild(document.createTextNode((new Date().getFullYear()).toString()))</script>
             All right reserved.</span>
 
         </div>
