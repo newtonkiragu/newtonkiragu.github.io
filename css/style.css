@@ -250,6 +250,10 @@ div.navbar.black{
         font-size: 13px;
 }
 
+.scroll-link:hover{
+    color: #F54325;
+}
+
 @media (min-width: 768px){
     .navbar-nav > li > a {
      
@@ -291,6 +295,10 @@ div.navbar.black{
 }
 .navbar-default .navbar-nav>li>a {
     color: #fff;
+}
+.active{
+    color: #fff;
+    background-color: #F54325;
 }
 /*==================== ========*/
 /*========= main flex slider =========*/
@@ -505,8 +513,11 @@ div.navbar.black{
 /*==================== ========*/
 /*========= Sections =========*/
 /*============================*/
-#recent-work{
-    background: #fff;
+#recent-work {
+    background-color: #fff;
+    background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
 }
 #about-colored{
     background-color: #fff;
@@ -630,7 +641,9 @@ div.navbar.black{
 /*========= Portflio and blog image hover overlay =========*/
 /*=========================================================*/
 .portfolio-item{
-    margin-bottom: 20px;
+    margin-bottom:  20px;
+    padding: 5px;
+
 }
 .image-sec{
     position: relative;
@@ -996,7 +1009,7 @@ background: transparent;
     padding: 15px;
     background: #fff;
     box-shadow: 0px 1px 2px #999;
-    -webkit-box-shadow: 0px 1px 2px #999;
+    -webkit-box-shadow: 0px 1px 2px #F54325;
 }
 select,
 textarea,
@@ -1052,7 +1065,7 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .form-control:focus{
-    border: 1px solid #b3b3b3;
+    border: 1px solid #F54325;
     background: #FFF;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -1073,4 +1086,35 @@ input{
     font-family: 'Indie Flower', cursive;
     font-weight: bold;
     font-size: 18px;
+}
+
+
+.shadow-effect{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.shadow-effect:before, .shadow-effect:after{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.shadow-effect:after{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+    -moz-transform:skew(8deg) rotate(3deg);
+    -ms-transform:skew(8deg) rotate(3deg);
+    -o-transform:skew(8deg) rotate(3deg);
+    transform:skew(8deg) rotate(3deg);
 }

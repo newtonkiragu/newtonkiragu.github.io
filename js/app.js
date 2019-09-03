@@ -25,6 +25,10 @@ $(document).ready(function () {
     event.preventDefault();
     $('html, body').animate({ scrollTop: 0 }, 'slow');
   });
+
+  $('body').scrollspy({
+    target: '.navbar-fixed-top'
+  });
 });
 // scroll function
 function scrollToID(id, speed) {
@@ -34,7 +38,7 @@ function scrollToID(id, speed) {
   $('html,body').animate({ scrollTop: targetOffset }, speed);
   if (mainNav.hasClass("open")) {
     mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-    mainNav.removeClass("open");
+    mainNav.addClass("open");
   }
 }
 if (typeof console === "undefined") {
@@ -77,3 +81,22 @@ var wow = new WOW(
   }
 );
 wow.init();
+
+
+$(".filter-button").click(function(){
+  var value = $(this).attr('data-filter');
+  console.log(value)
+  if(value == "all")
+  {
+    //$('.filter').removeClass('hidden');
+    $('.filter').show('1000');
+  }
+  else
+  {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+    $(".filter").not('.'+value).hide('3000');
+    $('.filter').filter('.'+value).show('3000');
+
+  }
+});
