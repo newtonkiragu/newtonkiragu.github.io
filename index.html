@@ -36,6 +36,11 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
+<style type="text/css">
+  #honeypot {
+    display: none; /*makes the field not visible to humans*/
+  }
+</style>
   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -352,6 +357,7 @@
               <label for="message">Message</label>
               <textarea class="form-control" rows="8" name="message" id="message" required></textarea>
             </div>
+            <input id="honeypot" type="text" name="honeypot" value="" />
             <div class="form-group">
 
               <button type="submit" class="btn btn-theme btn-lg pull-right">Send Message</button>

@@ -1122,3 +1122,7 @@ input{
 .links{
     color: #F54325;
 }
+
+#honeypot {
+    display: none; /*makes the field not visible to humans*/
+}
