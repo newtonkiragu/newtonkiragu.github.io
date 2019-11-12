@@ -2,12 +2,10 @@ $(document).ready(function () {
   $(window).on("scroll", function () {
     if ($(window).scrollTop()) {
       $('div.navbar').addClass('black');
-      console.log("added black on navbar");
     }
 
     else {
       $('div.navbar').removeClass('black');
-      console.log("removed black on navbar");
 
     }
   });
@@ -85,16 +83,12 @@ wow.init();
 
 $(".filter-button").click(function(){
   var value = $(this).attr('data-filter');
-  console.log(value)
-  if(value == "all")
+  if(value === "all")
   {
-    //$('.filter').removeClass('hidden');
     $('.filter').show('1000');
   }
   else
   {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
     $(".filter").not('.'+value).hide('3000');
     $('.filter').filter('.'+value).show('3000');
 
