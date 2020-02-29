@@ -36,7 +36,7 @@ h2.subtitle {
     margin-bottom: 0;
 }
 h2.subtitle i {
-    color: #F54325;
+    color: purple;
     font-size: 10em;
 }
 /*h3{*/
@@ -52,7 +52,7 @@ a.hover-color {
     transition: all 200ms ease-in;
 }
 a.hover-color:hover {
-    color: #F54325 !important;
+    color: purple !important;
 }
 fieldset,
 iframe {
@@ -124,7 +124,7 @@ div.navbar.black {
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
 .navbar-inverse .navbar-nav > .active > a:hover {
-    background-color: #F54325 !important;
+    background-color: purple !important;
     color: #fff;
 }
 .navbar-inverse .navbar-nav > .open > a,
@@ -141,7 +141,7 @@ div.navbar.black {
     font-size: 13px;
 }
 .scroll-link:hover {
-    color: #F54325;
+    color: purple;
 }
 @media (min-width: 768px) {
     .navbar-nav > li > a {
@@ -178,12 +178,12 @@ div.navbar.black {
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
     color: #fff;
-    background-color: #F54325;
+    background-color: purple;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
-    background-color: #F54325;
+    background-color: purple;
     color: #fff;
 }
 .navbar-default .navbar-nav > li > a {
@@ -191,7 +191,7 @@ div.navbar.black {
 }
 .active {
     color: #fff;
-    background-color: #F54325;
+    background-color: purple;
 }
 /*==================== ========*/
 /*========= main flex slider =========*/
@@ -224,7 +224,7 @@ div.navbar.black {
     background: #fff !important;
 }
 .slider-main .flex-control-paging li a.flex-active {
-    background: #F54325 !important;
+    background: purple !important;
 }
 .slider-main .flex-control-nav {
     width: 100%;
@@ -304,12 +304,12 @@ div.navbar.black {
 
 .btn-theme {
     background-color: transparent;
-    color: #F54325;
+    color: purple;
     border-radius: 0;
-    border: 1px solid #F54325;
+    border: 1px solid purple;
 }
 .btn-theme:hover {
-    background-color: #F54325;
+    background-color: purple;
     color: #fff;
 }
 .btn-dark {
@@ -318,8 +318,8 @@ div.navbar.black {
     border: 1px solid #555;
 }
 .btn-dark:hover {
-    background-color: #F54325;
-    border-color: #F54325;
+    background-color: purple;
+    border-color: purple;
     color: #fff;
 }
 .btn-lg {
@@ -347,7 +347,7 @@ div.navbar.black {
 }
 .services-box i {
     font-size: 39px;
-    color: #F54325;
+    color: purple;
 }
 .services-box p {
     margin-bottom: 0;
@@ -391,7 +391,7 @@ div.navbar.black {
 /*    background-size: inherit;*/
 /*}*/
 #testimonials {
-    background-color: #F54325;
+    background-color: purple;
 
 }
 #footer-defoult {
@@ -465,12 +465,12 @@ div.navbar.black {
 
 }
 .portfolio-filters li:hover {
-    background-color: #F54325;
+    background-color: purple;
     color: #fff;
 }
 .portfolio-filters li.active {
     color: #fff;
-    background-color: #F54325;
+    background-color: purple;
 }
 .port-single-desc strong {
     font-weight: 700;
@@ -543,7 +543,7 @@ div.navbar.black {
     padding: 15px;
     background: #fff;
     box-shadow: 0 1px 2px #999;
-    -webkit-box-shadow: 0 1px 2px #F54325;
+    -webkit-box-shadow: 0 1px 2px purple;
 }
 input[type="text"],
 input[type="password"],
@@ -599,7 +599,7 @@ input[type="tel"]:focus,
 input[type="color"]:focus,
 .form-control:focus,
 textarea:focus {
-    border: 1px solid #F54325;
+    border: 1px solid purple;
     background: #FFF;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -610,7 +610,7 @@ textarea:focus {
 .colored-bg {
     width: 100%;
     padding: 15px;
-    background-color: #F54325;
+    background-color: purple;
 }
 .lead {
     font-weight: 400;
@@ -654,7 +654,7 @@ input {
 }
 
 .links {
-    color: #F54325;
+    color: purple;
 }
 
 #honeypot {
