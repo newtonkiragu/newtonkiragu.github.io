@@ -12,6 +12,15 @@
 
     gtag('config', 'UA-133342901-1');
   </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TLGS46S');</script>
+  <!-- End Google Tag Manager -->
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -196,7 +205,7 @@
             <div class="portfolio-item shadow-effect filter ruby col-xs-12 col-sm-4">
               <a href="https://msdictionary.herokuapp.com/" target="_blank" rel="noreferrer">
                 <div class="image-sec">
-                  <img class="img-responsive" src="images/dictionary.png" alt="Portfolio">
+                  <img class="img-responsive lazy" data-src="images/dictionary.png" alt="Portfolio">
                   <div class="image-overlay">
                     <p>HTML5 <br> Materialize <br> Ruby on Rails</p>
                   </div>
@@ -208,7 +217,7 @@
             <div class="portfolio-item shadow-effect filter go col-xs-12 col-sm-4">
               <a href="http://overflow.moringaschool.com" target="_blank" rel="noreferrer">
                 <div class="image-sec">
-                  <img class="img-responsive" src="images/moringa-blog.png" alt="Portfolio">
+                  <img class="img-responsive lazy" data-src="images/moringa-blog.png" alt="Portfolio">
                   <div class="image-overlay">
                     <p>Golang <br> Hugo <br> Disqus</p>
                   </div>
@@ -220,7 +229,7 @@
             <div class="portfolio-item shadow-effect filter wordpress col-xs-12 col-sm-4">
               <a href="http://tsavocity.co.ke/" target="_blank" rel="noreferrer">
                 <div class="image-sec">
-                  <img class="img-responsive" src="images/tsavo.png" alt="Portfolio">
+                  <img class="img-responsive lazy" data-src="images/tsavo.png" alt="Portfolio">
                   <div class="image-overlay">
                     <p>Wordpress <br> PhP <br> SEO <br> Google analytics</p>
                   </div>
@@ -232,7 +241,7 @@
             <div class="portfolio-item shadow-effect filter react col-xs-12 col-sm-4">
               <a href="http://wakili101.com" target="_blank" rel="noreferrer">
                 <div class="image-sec">
-                  <img class="img-responsive" src="images/wakili.png" alt="Portfolio">
+                  <img class="img-responsive lazy" data-src="images/wakili.png" alt="Portfolio">
                   <div class="image-overlay">
                     <p>React JS <br>Webpack <br> Babel <br> Bootstrap <br> SEO <br> Google
                       analytics</p>
@@ -245,7 +254,7 @@
             <div class="portfolio-item shadow-effect filter ruby col-xs-12 col-sm-4">
               <a href="http://mspun.herokuapp.com/" target="_blank" rel="noreferrer">
                 <div class="image-sec">
-                  <img class="img-responsive" src="images/pun.png" alt="Portfolio">
+                  <img class="img-responsive lazy" data-src="images/pun.png" alt="Portfolio">
                   <div class="image-overlay">
                     <p>Ruby (Sinatra) <br> Travis CI <br> Materialize</p>
                   </div>
@@ -257,7 +266,7 @@
             <div class="portfolio-item shadow-effect filter angular col-xs-12 col-sm-4">
               <a href="https://github.com/newtonkiragu/pean-designers.io" target="_blank" rel="noreferrer">
                 <div class="image-sec">
-                  <img class="img-responsive" src="images/pean.png" alt="Portfolio">
+                  <img class="img-responsive lazy" data-src="images/pean.png" alt="Portfolio">
                   <div class="image-overlay">
                     <p>Angular JS <br> Materialize <br> Mpesa <br> PayPal</p>
                   </div>
@@ -269,7 +278,7 @@
             <div class="portfolio-item shadow-effect filter python col-xs-12 col-sm-4">
               <a href="http://watchl1st.herokuapp.com/" target="_blank" rel="noreferrer">
                 <div class="image-sec">
-                  <img class="img-responsive" src="images/watchlist.png" alt="Portfolio">
+                  <img class="img-responsive lazy" data-src="images/watchlist.png" alt="Portfolio">
                   <div class="image-overlay">
                     <p>Python <br> Django <br> The movie db api</p>
                   </div>
@@ -281,7 +290,7 @@
             <div class="portfolio-item shadow-effect filter python col-xs-12 col-sm-4">
               <a href="http://mtr1bune.herokuapp.com/" target="_blank" rel="noreferrer">
                 <div class="image-sec">
-                  <img class="img-responsive" src="images/mtribune.png" alt="Portfolio">
+                  <img class="img-responsive lazy" data-src="images/mtribune.png" alt="Portfolio">
                   <div class="image-overlay">
                     <p>Python <br> Flask</p>
                   </div>
@@ -419,6 +428,7 @@
   <script src="./js/jquery.flexslider-min.js" type="text/javascript"></script>
   <script src="./js/wow.min.js" type="text/javascript"></script>
   <script src="./js/app.js" type="text/javascript"></script>
+  <script src="./js/lazyLoader.js" type="text/javascript"></script>
   <script src="./js/form-submission-handler.min.js" type="text/javascript" data-cfasync="false"></script>
   <script src="./js/ascii.js"></script>
 </body>
