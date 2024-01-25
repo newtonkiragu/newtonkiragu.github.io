@@ -96,8 +96,17 @@ document.addEventListener("DOMContentLoaded", function () {
         entries.forEach(function (entry) {
             if (entry.isIntersecting) {
                 let lazyImage = entry.target;
-                lazyImage.src = lazyImage.dataset.src;
-                observer.unobserve(lazyImage);
+
+                // Create a new image element
+                let newImage = new Image();
+                // Set the source to the data-src
+                newImage.src = lazyImage.dataset.src;
+                // Add a load event listener
+                newImage.addEventListener('load', function () {
+                    // Once the image is loaded, replace the placeholder with the new image
+                    lazyImage.src = newImage.src;
+                    observer.unobserve(lazyImage);
+                });
             }
         });
     });
