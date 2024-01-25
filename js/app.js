@@ -88,3 +88,21 @@ function handleMouseMove(event, card) {
       card.querySelector('.card-bg').style.transform = 'translateX(0) translateY(0)';
     }, 1000);
   }
+  // JavaScript to initialize lazy loading using Intersection Observer
+document.addEventListener("DOMContentLoaded", function () {
+    let lazyImages = document.querySelectorAll('.lazy-load');
+
+    let observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                let lazyImage = entry.target;
+                lazyImage.src = lazyImage.dataset.src;
+                observer.unobserve(lazyImage);
+            }
+        });
+    });
+
+    lazyImages.forEach(function (lazyImage) {
+        observer.observe(lazyImage);
+    });
+});
