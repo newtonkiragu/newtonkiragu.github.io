@@ -48,13 +48,20 @@
 	});
 
 
-	//Travel portfolio page
-
+	//projects portfolio page
 	$(".projects").on('click', function () {
 		$("body").addClass("projects-on");
 	});
 	$(".projects-close").on('click', function () {
 		$("body").removeClass("projects-on");
+	});
+
+    //services page
+	$(".services").on('click', function () {
+		$("body").addClass("services-on");
+	});
+	$(".services-close").on('click', function () {
+		$("body").removeClass("services-on");
 	});
 
 })(jQuery);
