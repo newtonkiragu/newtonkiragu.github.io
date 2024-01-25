@@ -62,8 +62,18 @@
 function handleMouseMove(event, card) {
     const width = card.offsetWidth;
     const height = card.offsetHeight;
-    const mouseX = event.pageX - card.offsetLeft - width / 2;
-    const mouseY = event.pageY - card.offsetTop - height / 2;
+    let mouseX, mouseY;
+
+    if (event.touches) {
+        // For touch devices
+        mouseX = event.touches[0].pageX - card.offsetLeft - width / 2;
+        mouseY = event.touches[0].pageY - card.offsetTop - height / 2;
+    } else {
+        // For other devices
+        mouseX = event.pageX - card.offsetLeft - width / 2;
+        mouseY = event.pageY - card.offsetTop - height / 2;
+    }
+
     const mousePX = mouseX / width;
     const mousePY = mouseY / height;
 
@@ -76,18 +86,30 @@ function handleMouseMove(event, card) {
     const tY = mousePY * -30;
 
     card.querySelector('.card-bg').style.transform = `translateX(${tX}px) translateY(${tY}px)`;
-  }
+}
 
-  function handleMouseEnter(card) {
+function handleMouseEnter(card) {
     clearTimeout(card.mouseLeaveDelay);
-  }
+}
 
-  function handleMouseLeave(card) {
+function handleMouseLeave(card) {
     card.mouseLeaveDelay = setTimeout(() => {
-      card.style.transform = 'rotateY(0deg) rotateX(0deg)';
-      card.querySelector('.card-bg').style.transform = 'translateX(0) translateY(0)';
+        card.style.transform = 'rotateY(0deg) rotateX(0deg)';
+        card.querySelector('.card-bg').style.transform = 'translateX(0) translateY(0)';
     }, 1000);
-  }
+}
+
+document.querySelectorAll('.card-wrap').forEach((card) => {
+    card.addEventListener('mousemove', (event) => handleMouseMove(event, card));
+    card.addEventListener('mouseenter', () => handleMouseEnter(card));
+    card.addEventListener('mouseleave', () => handleMouseLeave(card));
+
+    // Add touch event listeners for mobile devices
+    card.addEventListener('touchmove', (event) => handleMouseMove(event, card), { passive: false });
+    card.addEventListener('touchstart', () => handleMouseEnter(card), { passive: false });
+    card.addEventListener('touchend', () => handleMouseLeave(card), { passive: false });
+});
+
   // JavaScript to initialize lazy loading using Intersection Observer
 document.addEventListener("DOMContentLoaded", function () {
     let lazyImages = document.querySelectorAll('.lazy-load');
