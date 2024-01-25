@@ -48,8 +48,7 @@
     <!--bootstrap3 css-->
     <link href="./css/bootstrap.min.css" rel="prefetch stylesheet" type="text/css">
     <!--fontawesome-->
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
-
+    <link rel="prefetch stylesheet" href="./css/font-awesome.min.css">
     <!--custom css-->
     <link href="./css/style.css" rel="prefetch stylesheet" type="text/css">
     <link href="./images/me.png" rel="icon" type="image/png">
@@ -76,6 +75,11 @@
             </div>
         </div>
     </div>
+<!-- Lazy-loaded image with linear gradient overlay -->
+    <div class="hero-bg">
+        <div class="linear-gradient-overlay"></div>
+        <img src='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"%3E%3C/svg%3E' class="lazy-load" data-src="./images/newton.jpg" alt="Newton Karanu">
+    </div>
 </div>
 
 <div class="about-section">
@@ -84,7 +88,8 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
-                    <img src="./images/me.jpeg" alt="Newton Karanu">
+                    <img src='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"%3E%3C/svg%3E' data-src="./images/me.jpeg" alt="Newton Karanu"
+                         class="lazy-load">
                 </div>
                 <div class="col-lg-8 text-center mt-4">
                     <p>
@@ -119,17 +124,22 @@
                        class="contact-title hover-target">karanunewton4@gmail.com</a>
                 </div>
                 <div class="col-12 text-center social mt-4">
-                    <a href="https://stackoverflow.com/users/8781103/newton-karanu" target="_blank" class="hover-target">
-                        <img src="./icons/so.svg" alt="instagram" class="contact-img">
+                    <a href="https://stackoverflow.com/users/8781103/newton-karanu" target="_blank"
+                       class="hover-target">
+                        <img src='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"%3E%3C/svg%3E' data-src="./icons/so.svg" alt="instagram"
+                             class="contact-img lazy-load">
                     </a>
                     <a href="https://www.instagram.com/_karanunewton/" target="_blank" class="hover-target">
-                        <img src="./icons/instagram.svg" alt="instagram" class="contact-img">
+                        <img src='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"%3E%3C/svg%3E' data-src="./icons/instagram.svg" alt="instagram"
+                             class="contact-img lazy-load">
                     </a>
                     <a href="https://github.com/newtonkiragu" target="_blank" class="hover-target">
-                        <img src="./icons/octocat.svg" alt="github" class="contact-img">
+                        <img src='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"%3E%3C/svg%3E' data-src="./icons/octocat.svg" alt="github"
+                             class="contact-img lazy-load">
                     </a>
                     <a href="https://twitter.com/KiraguNewton" target="_blank" class="hover-target">
-                        <img src="./icons/twitter.svg" alt="twitter" class="contact-img">
+                        <img src='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"%3E%3C/svg%3E' data-src="./icons/twitter.svg" alt="twitter"
+                             class="contact-img lazy-load">
                     </a>
                 </div>
             </div>
@@ -152,44 +162,54 @@
             </div>
 
             <div class="card-container">
-                <div class="card-wrap hover-target" onmousemove="handleMouseMove(event, this)" onmouseenter="handleMouseEnter(this)"
+                <div class="card-wrap hover-target" onmousemove="handleMouseMove(event, this)"
+                     onmouseenter="handleMouseEnter(this)"
                      onmouseleave="handleMouseLeave(this)">
                     <div class="card" id="card1">
                         <div class="card-bg"
-                             style="background-image: url('./images/aliases.png')"></div>
+                             style="background-image: url('./images/aliases.png')">
+                            <img src='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"%3E%3C/svg%3E' data-src="" alt="" class="lazy-load">
+                        </div>
                         <div class="card-info">
                             <h1>Aliases</h1>
                             <p>A developer friendly terminal application</p>
                         </div>
                     </div>
                 </div>
-                <div class="card-wrap hover-target" onmousemove="handleMouseMove(event, this)" onmouseenter="handleMouseEnter(this)"
+                <div class="card-wrap hover-target" onmousemove="handleMouseMove(event, this)"
+                     onmouseenter="handleMouseEnter(this)"
                      onmouseleave="handleMouseLeave(this)">
                     <div class="card" id="card2">
-                        <div class="card-bg"
-                             style="background-image: url('./images/mookh.png')"></div>
+                        <div class="card-bg">
+                            <img src='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"%3E%3C/svg%3E' data-src="./images/mookh.png" alt="" class="lazy-load">
+                        </div>
                         <div class="card-info">
                             <h1>Mookh.</h1>
                             <p>An event and ticketing platform.</p>
                         </div>
                     </div>
                 </div>
-                <div class="card-wrap hover-target" onmousemove="handleMouseMove(event, this)" onmouseenter="handleMouseEnter(this)"
+                <div class="card-wrap hover-target" onmousemove="handleMouseMove(event, this)"
+                     onmouseenter="handleMouseEnter(this)"
                      onmouseleave="handleMouseLeave(this)">
                     <div class="card" id="card3">
-                        <div class="card-bg"
-                             style="background-image: url('./images/qlick.png')"></div>
+                        <div class="card-bg">
+                            <img src='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"%3E%3C/svg%3E' data-src="./images/qlick.png" alt="" class="lazy-load">
+                        </div>
                         <div class="card-info">
                             <h1>Qlick Solutions</h1>
                             <p>An SMS and a Payment Gateway</p>
                         </div>
                     </div>
                 </div>
-                <div class="card-wrap hover-target" onmousemove="handleMouseMove(event, this)" onmouseenter="handleMouseEnter(this)"
+                <div class="card-wrap hover-target" onmousemove="handleMouseMove(event, this)"
+                     onmouseenter="handleMouseEnter(this)"
                      onmouseleave="handleMouseLeave(this)">
                     <div class="card" id="card4">
-                        <div class="card-bg"
-                             style="background-image: url('./images/bposeats.png')"></div>
+                        <div class="card-bg">
+                            <img src='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"%3E%3C/svg%3E' data-src="./images/bposeats.png" alt=""
+                                 class="lazy-load">
+                        </div>
                         <div class="card-info">
                             <h1>BPOSeats</h1>
                             <p>An entire Business Process Outsourcing platform.</p>
@@ -212,7 +232,7 @@
 <script src="./js/jquery.min.js"></script>
 <script src="./js/app.js" type="text/javascript"></script>
 
-<script src="./js/ascii.js"></script>
+<script defer src="./js/ascii.js"></script>
 </body>
 
 </html>
